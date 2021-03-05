@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Article preview component</title>
 
@@ -24,8 +25,53 @@
 
   Share-->
 
-  
+  <div class="main-grid">
+    <div>
+      <img src="./images/drawers.jpg" alt="drawers" class="img-drawer"/>
+    </div>
+    <div>
+      <div class="name-left">
+        <h4>
+          Shift the overall look and feel by adding these wonderful 
+          touches to furniture in your home
+        </h4>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.
+        <p>
+      </div>
+      <div class="name-left">
+        <img src="./images/avatar-michelle.jpg" alt="Michelle" class="avatar"/>
+        <p id="userName">
+          Michelle Appleton
+          <img src="./images/icon-share.svg" alt="share" class="share-arrow" id="share"/>
+          <div>
+            <div class="rectangle" id="rec">
+              <p>share</p>
+              <div class="img-row">
+                  <div class="img-column">
+                    <img src="./images/icon-facebook.svg" alt="facebook" class="img-sMedia"/>
+                  </div>
+                  <div class="img-column">
+                    <img src="./images/icon-twitter.svg" alt="twitter" class="img-sMedia"/>
+                  </div>
+                  <div class="img-column">
+                    <img src="./images/icon-pinterest.svg" alt="pinterest" class="img-sMedia"/>
+                  </div>
+              </div>
+            </div>
+            <div class="triangle-down" id="tria"></div>
+          </div>
+        </p>
+      </div>
+        
+    </div>
+  </div>
+
+
   
 
+<script src="scripts.js"></script>
 </body>
 </html>

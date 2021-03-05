@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+/*=========
+Table of Contents
+1. Global Variables
+2. Body & Layout
+3. Typography
+4. Media Quieres
+============*/
+
+/*==========
+ Global Variables
+ ==========*/
+:root{
+        /*Colors*/
+    --veryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --desaturatedDarkBlue: hsl(214, 17%, 51%);
+    --grayishBlue: hsl(212, 23%, 69%);
+    --lightGrayishBlue: hsl(210, 46%, 95%);
+    --offWhite: hsl(204, 14%, 93%);
+
+    /* Fonts Size*/
+    --fontSize: 13px;
+    --fontFamily:'Manrope', sans-serif;
+
+    /* Weights */
+    --topWeight: 700;
+    --middleWeight: 500;  
+
+}
+
+ /*==========
+ Body & Layout
+ ==========*/
+body{
+    background-color: var(--lightGrayishBlue);
+    font-family: var(--fontFamily);
+    margin: 0;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 0rem;
+    padding: 0rem;
+    box-shadow: 5px 5px 5px rgb(179, 179, 179);
+    width: 900px;
+    height: 300px;
+    margin-top: 25%;
+    margin-left: 20%;
+    border-radius: 25px;
+}
+
+
+.main-grid > div{
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  background-color: var(--offWhite);
+  height: 260px;
+  border-radius: 25px;
+}
+
+.img-drawer{
+    width: 350px;
+    height: 300px;
+    border-radius: 25px 0px 0px 25px;
+    position: relative;
+    margin-right: 220px;
+    margin-top: -20px
+}
+
+.name-left{
+    text-align: left;
+}
+
+.avatar{
+    width:8%;
+    display: inline-block;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.share-arrow{
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+    background: var(--lightGrayishBlue) ;
+    border-radius: 50px;
+    width: 25px;
+}
+
+.share-arrow:hover{
+    background: var(--grayishBlue) ;
+    border-radius: 50px;
+    width: 20px;
+}
+
+/* dialog box shape*/
+
+.rectangle {
+    height: 75px;
+    width: 290px;
+    background-color: var(--veryDarkGrayishBlue);
+    border-radius: 15px;
+    position: absolute;
+    margin-left:330px;
+    margin-top: -140px;
+    display: flex;
+    visibility: hidden;
+    
+  }
+  .triangle-down {
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 25px solid var(--veryDarkGrayishBlue);
+      position: absolute;
+      margin-left:465px;
+      margin-top: -65px;
+      visibility: hidden;
+  }
+
+  .img-column{
+      flex: 33.33%;
+      padding: 0px;
+      align-items: flex-end;
+      
+  }
+
+  .img-row{
+    display: flex;
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+
+  .img-sMedia{
+      margin: 5px;
+      margin-left: 5px;
+  }
+
+
+
+
+ /*==========
+ Typography
+ ==========*/
+
+ h4{
+    font-size: 28px;
+    color: var(--veryDarkGrayishBlue);
+    font-weight: var(--topWeight);
+    margin-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+p{
+    font-size: var(--fontSize);
+    color: var(--desaturatedDarkBlue);
+    font-weight: var(--middleWeight);
+    margin-top: -20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#userName{
+    font-size: var(--fontSize);
+    color: var(--veryDarkGrayishBlue);
+    font-weight: var(--topWeight);
+    position: relative;
+    margin-top: -50px;
+    margin-left: 60px;
+}
+
+#userName::after{
+    content: '28 Jun 2020';
+    font-size: var(--fontSize);
+    color: var(--desaturatedDarkBlue);
+    font-weight: var(--middleWeight);
+    display: block;
+
+}
+
+.rectangle > p{
+    margin-top: 28px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: var(--topWeight);
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+
+
+ /*==========
+ Media Quieres
+ ==========*/
