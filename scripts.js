@@ -3,10 +3,16 @@ const dialogTriangle = document.getElementById('tria');
 const share = document.getElementById('share');
 
 
-share.addEventListener("click", dialogBox);
+share.addEventListener("click", toggleDialogBox);
 
-function dialogBox(){
-    dialogRectangle.style.visibility = "visible";
-    dialogTriangle.style.visibility = "visible";
-}
+function toggleDialogBox(){
+    if ( dialogRectangle.style.visibility === "hidden" && dialogTriangle.style.visibility === "hidden" ){
+        dialogRectangle.style.visibility = "visible";
+        dialogTriangle.style.visibility = "visible";
+    } else{
+        dialogRectangle.style.visibility = "hidden";
+        dialogTriangle.style.visibility = "hidden";
 
+    }
+
+};
