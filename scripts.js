@@ -10,6 +10,3 @@ function dialogBox(){
     dialogTriangle.style.visibility = "visible";
 }
 
-function a() {
-    console.log ('hello world')
-}
